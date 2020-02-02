@@ -12,9 +12,9 @@ void setup()
 
 void loop()
 {
-  if (!digitalRead(sw)) 
+  if (digitalRead(sw)==0) 
   {
-    if (!LED_S) 
+    if (LED_S==0) 
     {
       LED_S = 1;
       sw_s = !sw_s; 
